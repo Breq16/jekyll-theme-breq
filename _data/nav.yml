@@ -1,7 +1,11 @@
 navbar:
+    - name: "Basic Page"
+      url: /basic-page
     - name: "Custom Layout"
       url: /custom-layout
-    - name: "Project Page"
-      url: /project-page
+    - name: "Project Pages"
+      url: /projects
     - name: "Blog"
       url: /blog
+    - name: "Showcase"
+      url: /showcase
