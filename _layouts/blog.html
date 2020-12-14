@@ -4,15 +4,36 @@ layout: page
 
 {{ content }}
 
-<div class="row">
-    {% for post in site.posts %}
-    <div class="col-xl-4 col-lg-6 col-md-6">
-        <div class="bordered-box">
-            <a href="{{ post.url }}" class="block-link">
-                <p>{{ post.excerpt }}</p>
-                <p><i>Published on {{ post.date | date_to_string }}</i></p>
-            </a>
+{% for post in site.posts %}
+
+<div class="tile-col col-lg-6">
+    <a class="tile-link" href="{{ post.url }}">
+        <div class="tile">
+
+            {% if post.image %}
+            <img src="{{ post.image }}" loading="lazy">
+            {% else %}
+            <img src="{{ site.data.site.default_image }}" loading="lazy">
+            {% endif %}
+
+            <div class="tile-caption">
+                {{ post.excerpt }}
+            </div>
+
+
+            <div class="tile-cta d-none d-md-block">
+                <span>More</span>
+                &nbsp;
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="tile-year d-none d-md-block">
+                <i class="fas fa-calendar-alt"></i>
+                &nbsp;
+                <span>{{ post.date | date_to_string }}</span>
+            </div>
         </div>
-    </div>
-    {% endfor %}
+    </a>
 </div>
+
+{% endfor %}

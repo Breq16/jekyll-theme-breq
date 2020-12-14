@@ -3,20 +3,24 @@ layout: page
 title: Projects
 ---
 
+{{ content }}
+
 {% for project in site[page.gallery_of] %}
 
 <div class="tile-col col-lg-6">
     <a class="tile-link" href="{{ project.url }}">
         <div class="tile">
 
-            {% if project.tile_type == "image" %}
-            <img src="{{ project.image }}" loading="lazy">
-            {% endif %}
-
-            {% if project.tile_type == "video" %}
+            {% if project.video %}
             <video playsinline autoplay muted loop disablePictureInPicture>
                 <source src="{{ project.video }}" type="video/webm">
             </video>
+            {% else %}
+            {% if project.image %}
+            <img src="{{ project.image }}" loading="lazy">
+            {% else %}
+            <img src="{{ site.data.site.default_image }}" loading="lazy">
+            {% endif %}
             {% endif %}
 
 
