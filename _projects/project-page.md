@@ -4,6 +4,7 @@ title: Example Project
 subtitle: An example project writeup to test the theme.
 status: wip
 repo: Breq16/Breq16
+demo: https://google.com/
 created: December 2020
 tile_type: image
 image: /assets/images/pansexual.png
