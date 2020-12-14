@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Breq's Awesome Jekyll Theme
 ---
 # Breq's Awesome Jekyll Theme
 **Hello!** This is my *theme* I'm working on for my [website](https://breq.dev/).
