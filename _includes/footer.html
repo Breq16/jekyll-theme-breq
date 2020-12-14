@@ -1,0 +1,35 @@
+<div class="footer">
+    <div class="container">
+        <br>
+        <br>
+        <p>
+            made with <i class="fas fa-heart" aria-hidden="true"></i>
+            <span class="sr-only">love</span> by {{ site.data.site.author }},
+
+            <i class="far fa-copyright" aria-hidden="true"></i>
+            <span class="sr-only">copyright</span> {{ site.data.site.copyright }},
+
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <span class="sr-only">github</span>
+            <a href="https://github.com/Breq16/breq.dev" target="_blank">Breq16/breq.dev</a>
+        </p>
+        <br>
+        <p>
+            {% for item in site.data.footer %}
+            <i class="{{ item[1].icon }}" aria-hidden="true"></i>
+            <span class="sr-only">{{ item[0] }}</span>
+            {% if item[1].link %}
+            <a href="{{ item[1].link }}" target="_blank">{{ item[1].text }}</a>
+            {% else %}
+            <span>{{ item[1].text }}</span>
+            {% endif %}
+            •
+            {% endfor %}
+
+            <a href="{{ site.data.site.contact }}" target="_blank">more
+            <i class="fas fa-angle-double-right" aria-hidden="true"></i></a>
+        </p>
+        <br>
+        <br>
+    </div>
+</div>

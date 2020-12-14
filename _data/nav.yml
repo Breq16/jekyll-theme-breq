@@ -1,0 +1,5 @@
+navbar:
+    - name: "Category 1"
+      url: /category1
+    - name: "Category 2"
+      url: /category2

@@ -1,0 +1,35 @@
+@import "colors";
+
+.navbar {
+    background-color: $navbar-background;
+}
+
+a.nav-link[href] {
+    color: $navbar-text-secondary;
+}
+
+a.nav-link[href]:hover {
+    color: $navbar-text-primary;
+}
+
+a.nav-active[href] {
+    color: $navbar-text-primary;
+}
+
+a.navbar-brand[href] {
+    color: $navbar-text-primary;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    color: $navbar-text-primary;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: $navbar-text-primary;
+    border-radius: 5px;
+}
+
+p.nav-separator {
+    margin: 0 10px;
+}

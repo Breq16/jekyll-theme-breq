@@ -1,0 +1,67 @@
+@import "colors";
+@import "nav";
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+    color: $text-color;
+    background-color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    color: $link;
+}
+
+a:hover {
+    color: $link;
+}
+
+p, ul, ol {
+    color: $secondary-text-color;
+}
+
+strong, em {
+    color: $important-text-color;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid $secondary-text-color;
+}
+
+blockquote {
+    margin: 40px 10px;
+    color: $white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+code {
+    color: $code !important;
+}
+
+.bordered-box {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: $border-box;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: $footer-background;
+}
+
+.footer p {
+    color: $footer-text;
+}

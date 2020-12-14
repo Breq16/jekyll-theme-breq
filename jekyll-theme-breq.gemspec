@@ -4,10 +4,10 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-breq"
   spec.version       = "0.1.0"
   spec.authors       = ["Wesley Chalmers"]
-  spec.email         = ["wesleyjchalmers@gmail.com"]
+  spec.email         = ["breq@breq.dev"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "A consitent theme for my personal websites."
+  spec.homepage      = "https://breq.dev/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }

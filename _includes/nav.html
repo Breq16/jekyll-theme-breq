@@ -1,0 +1,21 @@
+<div class="navbar sticky-top navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">{{ site.data.site.name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-hamburger"></span> <!-- haha, hamburger menu -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                {% for category in site.data.nav.navbar %}
+                    <li class="nav-item">
+                        <a
+                            class="nav-link {% if page.url contains category.url %}nav-active{% endif %}"
+                            href="{{ category.url }}">
+                            {{ category.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

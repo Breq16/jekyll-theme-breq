@@ -1,0 +1,30 @@
+$foreground-strong: #FF1B8D;
+$foreground-middle: #FFDA00;
+$foreground-weak: #FFFFFF;
+$background-strong: #1BB3FF;
+$background-weak: #000000;
+
+$background-color: $background-weak;
+$secondary-background-color: $background-strong;
+
+$text-color: $foreground-middle;
+$secondary-text-color: $foreground-weak;
+$important-text-color: $foreground-strong;
+
+$navbar-background: $foreground-strong;
+$navbar-text-primary: $background-weak;
+$navbar-text-secondary: $foreground-weak;
+
+$footer-background: $secondary-background-color;
+$footer-text: $background-color;
+
+$border-box: $navbar-background;
+
+$code: #0f0;
+$link: $foreground-strong;
+
+$darkest-gray: #222;
+$dark-gray: #333;
+$light-gray: #AAA;
+$lightest-gray: #777;
+$white: #FFF;
