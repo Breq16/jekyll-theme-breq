@@ -125,13 +125,12 @@ code {
     max-height: 200px;
 }
 
-.container img {
+img {
     object-fit: contain;
-    background-color: $accent-color;
     max-height: 600px;
 }
 
-.container img:not(.actual-size) {
+img:not(.actual-size) {
     width: 100%;
 }
 
