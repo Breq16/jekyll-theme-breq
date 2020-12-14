@@ -5,47 +5,47 @@ title: Projects
 
 {{ content }}
 
-{% for project in site[page.gallery_of] %}
+<div class="row">
+    {% for project in site[page.gallery_of] %}
+    <div class="tile-col col-lg-6">
+        <a class="tile-link" href="{{ project.url }}">
+            <div class="tile">
 
-<div class="tile-col col-lg-6">
-    <a class="tile-link" href="{{ project.url }}">
-        <div class="tile">
-
-            {% if project.video %}
-            <video playsinline autoplay muted loop disablePictureInPicture>
-                <source src="{{ project.video }}" type="video/webm">
-            </video>
-            {% else %}
-            {% if project.image %}
-            <img src="{{ project.image }}" loading="lazy">
-            {% else %}
-            <img src="{{ site.data.site.default_image }}" loading="lazy">
-            {% endif %}
-            {% endif %}
-
-
-            <div class="tile-tint tile-tint-{{ project.tile_color }}"></div>
+                {% if project.video %}
+                <video playsinline autoplay muted loop disablePictureInPicture>
+                    <source src="{{ project.video }}" type="video/webm">
+                </video>
+                {% else %}
+                {% if project.image %}
+                <img src="{{ project.image }}" loading="lazy">
+                {% else %}
+                <img src="{{ site.data.site.default_image }}" loading="lazy">
+                {% endif %}
+                {% endif %}
 
 
-            <div class="tile-caption">
-                <h1>{{ project.title }}</h1>
-                <p>{{ project.subtitle }}</p>
+                <div class="tile-tint tile-tint-{{ project.tile_color }}"></div>
+
+
+                <div class="tile-caption">
+                    <h1>{{ project.title }}</h1>
+                    <p>{{ project.subtitle }}</p>
+                </div>
+
+
+                <div class="tile-cta d-none d-md-block">
+                    <span>More</span>
+                    &nbsp;
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </div>
+
+                <div class="tile-year d-none d-md-block">
+                    <i class="fas fa-calendar-alt"></i>
+                    &nbsp;
+                    <span>{{ project.created }}</span>
+                </div>
             </div>
-
-
-            <div class="tile-cta d-none d-md-block">
-                <span>More</span>
-                &nbsp;
-                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </div>
-
-            <div class="tile-year d-none d-md-block">
-                <i class="fas fa-calendar-alt"></i>
-                &nbsp;
-                <span>{{ project.created }}</span>
-            </div>
-        </div>
-    </a>
+        </a>
+    </div>
+    {% endfor %}
 </div>
-
-{% endfor %}
