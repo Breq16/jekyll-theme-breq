@@ -3,18 +3,25 @@
 style="background-image:url('{{ include.image }}');"
 {% endif %}
 >
-    {% if include.video %}
-    <video autoplay muted loop>
-        <source src="{{ include.video }}" type="video/webm">
-    </video>
+    {% if include.link %}
+    <a href="{{ include.link }}" class="block-link">
     {% endif %}
 
-    <div class="slide-tint"></div>
+        {% if include.video %}
+        <video autoplay muted loop>
+            <source src="{{ include.video }}" type="video/webm">
+        </video>
+        {% endif %}
 
-    <div class="container">
-        <div class="slide-overlay">
-            <h1><strong>{{ include.title }}</strong></h1>
-            <p>{{ include.subtitle }}</p>
+        <div class="slide-tint"></div>
+
+        <div class="container">
+            <div class="slide-overlay">
+                <h1><strong>{{ include.title }}</strong></h1>
+                <p>{{ include.subtitle }}</p>
+            </div>
         </div>
-    </div>
+    {% if include.link %}
+    </a>
+    {% endif %}
 </div>

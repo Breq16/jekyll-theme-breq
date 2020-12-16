@@ -59,11 +59,19 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .slide-overlay h1 {
+    .slideshow .slide-overlay h1 {
         font-size: 72px;
     }
 
-    .slide-overlay p {
+    .slideshow .slide-overlay p {
+        font-size: 30px;
+    }
+
+    .slideshow h1 {
+        font-size: 60px;
+    }
+
+    .slideshow p {
         font-size: 30px;
     }
 }
