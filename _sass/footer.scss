@@ -1,0 +1,35 @@
+@import "colors.scss";
+
+.footer {
+    background-color: $footer-background;
+}
+
+.footer p, .footer a {
+    color: $footer-text;
+}
+
+table, tbody, td, th {
+  border: 2px solid #999;
+  padding: 0.5rem 0.7rem;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}

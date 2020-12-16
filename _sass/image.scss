@@ -1,0 +1,50 @@
+
+.page img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+img {
+    object-fit: contain;
+    max-height: 600px;
+}
+
+img:not(.actual-size) {
+    width: 100%;
+}
+
+img.actual-size {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@mixin halfwidth-img {
+    width: 50%;
+    max-height: 400px;
+}
+
+.halfwidth-left img {
+    @include halfwidth-img;
+    float: left;
+}
+
+.halfwidth-right img {
+    @include halfwidth-img;
+    float: right;
+}
+
+.small-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: $text-color;
+}
