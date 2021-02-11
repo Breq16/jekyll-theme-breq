@@ -1,0 +1,27 @@
+.post-jumbo {
+    background-color: $footer-background;
+}
+
+.post-jumbo .title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.post-jumbo h1.title {
+    font-size: 72px;
+}
+
+.post-jumbo .metadata {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.post-jumbo .metadata p {
+    font-size: 24px;
+    color: #000;
+}
+
+.post-main {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}

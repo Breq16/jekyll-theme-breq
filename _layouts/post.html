@@ -1,5 +1,16 @@
 ---
-layout: page
+layout: default
 ---
 
-{{ content }}
+<div class="post-jumbo">
+    <div class="container">
+        <h1 class="title">{{ page.title }}</h1>
+        <div class="metadata">
+            <p>{{ page.date | date_to_string }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="post-main container">
+    {{ content }}
+</div>
