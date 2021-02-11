@@ -17,12 +17,13 @@ layout: page
             {% endif %}
 
             <div class="tile-caption">
-                {{ post.excerpt }}
+                <h1>{{ post.title }}</h1>
+                {{ post.excerpt | truncate: 150 }}
             </div>
 
 
             <div class="tile-cta d-none d-md-block">
-                <span>More</span>
+                <span>Read</span>
                 &nbsp;
                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </div>
