@@ -2,10 +2,36 @@
 layout: page
 ---
 
+<div class="text-center">
 {{ content }}
+</div>
 
 {% for post in site.posts %}
 
+<div class="post-banner">
+    <a class="post-link" href="{{ post.url }}">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block">
+                {% if post.image %}
+                <img src="{{ post.image }}" loading="lazy">
+                {% else %}
+                <img src="{{ site.data.site.default_image }}" loading="lazy">
+                {% endif %}
+            </div>
+            <div class="col-md-3 d-xs-block d-md-none">
+                <hr>
+            </div>
+            <div class="col-md-9">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.excerpt | truncate: 200 }}</p>
+            </div>
+        </div>
+    </a>
+</div>
+
+{% endfor %}
+
+<!--
 <div class="tile-col col-lg-6">
     <a class="tile-link" href="{{ post.url }}">
         <div class="tile">
@@ -36,5 +62,4 @@ layout: page
         </div>
     </a>
 </div>
-
-{% endfor %}
+-->
