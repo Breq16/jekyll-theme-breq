@@ -22,4 +22,8 @@ And here's a table:
 | Axe | 3 |
 | Hoe | 2 |
 
+Here's some TeX:
+
+$$ x_1 = x_0 - \frac{f(x)}{f'(x)} $$
+
 Wasn't that fun?
