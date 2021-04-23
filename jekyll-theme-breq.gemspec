@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-breq"
   spec.version       = "0.1.7"
-  spec.authors       = ["Wesley Chalmers"]
+  spec.authors       = ["Brooke Chalmers"]
   spec.email         = ["breq@breq.dev"]
 
   spec.summary       = "A consitent theme for my personal websites."
