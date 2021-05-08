@@ -2,10 +2,12 @@
 layout: page
 ---
 
-<h1>{{ page.title }}</h1>
-{% if page.subtitle %}
-    <p>{{ page.subtitle }}</p>
-{% endif %}
+<div class="center">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+        <p>{{ page.subtitle }}</p>
+    {% endif %}
+</div>
 
 {% if page.status == "old" %}
 <div class="alert alert-warning" role="alert">
@@ -26,7 +28,7 @@ layout: page
 {% endif %}
 
 {% if page.repo or page.date %}
-<div class="row">
+<div class="row justify-content-center">
     {% if page.created %}
     <div class="col-xl-4 col-lg-6 col-md-6">
         <div class="bordered-box">
