@@ -21,6 +21,10 @@ a:hover {
     color: $link;
 }
 
+.block-link:hover {
+    text-decoration: none;
+}
+
 a.block-link:hover {
     text-decoration: none;
 }

@@ -9,7 +9,7 @@ layout: page
 {% for post in site.posts %}
 
 <div class="post-banner">
-    <a class="post-link" href="{{ post.url }}">
+    <a class="block-link" href="{{ post.url }}">
         <div class="row">
             <div class="col-md-3 d-none d-md-block">
                 {% if post.image %}
@@ -21,9 +21,14 @@ layout: page
             <div class="col-md-3 d-xs-block d-md-none">
                 <hr>
             </div>
-            <div class="col-md-9">
-                <h1>{{ post.title }}</h1>
-                <p>{{ post.excerpt | truncate: 200 }}</p>
+            <div class="col-md-9" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h1>{{ post.title }}</h1>
+                    <p class="blog-excerpt">
+                        {{ post.excerpt | strip_html }}
+                    </p>
+                </div>
+                <p style="align-self: flex-end;">{{ post.date | date: "%m/%d/%Y" }}</p>
             </div>
         </div>
     </a>
